@@ -16,7 +16,7 @@ filebeat.prospectors:
     - /var/log/*.log
 output.elasticsearch:
   hosts: ["192.168.1.42:9200"]' \
-djenriquez/filebeat
+djenriquez/filebeat:v5.5.2
 ```
 
 ## Mounted config
@@ -27,5 +27,5 @@ docker run -d \
 -e FILEBEAT_CONFIG_DIR=/ \
 -e FILEBEAT_CONFIG_FILE=myconfig.yml \
 -v "/etc/myconfig.yml:/myconfig.yml" \
-djenriquez/filebeat
+djenriquez/filebeat:v5.5.2
 ```
