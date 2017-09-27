@@ -1,6 +1,6 @@
 FROM alpine:3.6
 
-ENV FILEBEAT_VERSION=5.5.2
+ENV FILEBEAT_VERSION=5.6.2
 
 RUN set -x \
  && apk add --update bash curl tar openssl \                    
